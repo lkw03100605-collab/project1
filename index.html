@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>우리 반 알콩달콩 홈페이지</title>
+    <!-- 외부 스타일시트(CSS) 연결 -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>동고동락 우리 반 홈페이지 🏫</h1>
+        <p>우리들의 소중한 추억을 기록하는 공간입니다.</p>
+    </header>
+
+    <main>
+        <!-- 업로드 양식 영역 -->
+        <section class="upload-section">
+            <h3>📸 오늘의 추억 올리기</h3>
+            <form id="uploadForm">
+                <div class="form-group">
+                    <label for="author">이름</label>
+                    <input type="text" id="author" placeholder="이름을 적어주세요" required>
+                </div>
+                <div class="form-group">
+                    <label for="imageInput">사진 선택</label>
+                    <input type="file" id="imageInput" accept="image/*">
+                </div>
+                <div class="form-group">
+                    <label for="content">하고 싶은 말</label>
+                    <textarea id="content" placeholder="오늘 어떤 일이 있었나요?" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">등록하기</button>
+            </form>
+        </section>
+
+        <!-- 게시물 피드 영역 -->
+        <section class="feed-section">
+            <h2>우리의 이야기</h2>
+            <div id="postFeed">
+                <!-- 자바스크립트로 생성된 게시물이 여기에 들어갑니다 -->
+            </div>
+        </section>
+    </main>
+
+    <!-- 외부 자바스크립트(JS) 연결 -->
+    <script src="script.js"></script>
+</body>
+</html>
